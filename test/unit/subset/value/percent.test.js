@@ -16,6 +16,9 @@ test('percent-basic:', function(t) {
   arr = nlp('it is 0.5% of our budget').values().data();
   t.equal(arr[0].number, 0.5, 'match-0.5');
 
+  m = nlp('it is a 20% discount').match('#Percent');
+  t.equal(m.out('normal'), '20%', 'match-20%');
+
   t.end();
 });
 

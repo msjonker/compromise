@@ -27,7 +27,5 @@ module.exports = {
   Money: {
     //isA: 'Cardinal'
   },
-  Percent: {
-    isA: 'Value'
-  }
+  Percent: {}
 };
